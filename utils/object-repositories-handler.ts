@@ -44,3 +44,30 @@ export function getPersionalDetailInputOtherIdObject(){
 export function getPersionalDetailDriverLicensedObject(){
     return myinfo.persional_detail.input_licensenumber;
 }
+export function getPersionalDetailDriverLicensedExdateObject(){
+    return myinfo.persional_detail.input_licensen_exdate;
+}
+export function getPersionalDetailNationalyObject(){
+    return myinfo.persional_detail.select_nationaly;
+}
+export function getPersionalDetailNationalySeletedObject(){
+    return myinfo.persional_detail.select_nationaly_selected;
+}
+export function getPersionalDetaiMaritalstatusSeletedObject(){
+    return myinfo.persional_detail.select_maritalstatus_selected;
+}
+export function getPersionalDetaiMaritalstatusObject(){
+    return myinfo.persional_detail.select_maritalstatus;
+}
+export function getPersionalDetaiDateOfBirthObject(){
+    return myinfo.persional_detail.input_dateofbirth;
+}
+export function getPersionalDetaiGenderMaleObject(){
+    return myinfo.persional_detail.radio_gender_male;
+}
+export function getPersionalDetaiGenderFemaleObject(){
+    return myinfo.persional_detail.radio_gender_female;
+}
+export function getPersionalDetaiButtonSave1Object(){
+    return myinfo.persional_detail.button_save1;
+}
