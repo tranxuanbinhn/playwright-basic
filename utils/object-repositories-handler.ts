@@ -1,7 +1,8 @@
 import {form} from '../object-repositories/AuthFormPage'
 import { dashboard } from 'object-repositories/DashboardPage';
 import { myinfo } from 'object-repositories/MyInfoPage';
-
+import { menubar } from 'object-repositories/MenuBar';
+import { notification } from 'object-repositories/NotificationPage';
 export function getAuthFormUsernameObject(){
     return form.auth.login.username;
 }
@@ -17,6 +18,22 @@ export function getMainTitleObject(){
 export function getMyInforMainTitleMyinforPage(){
     return myinfo.main_title;
 }
+export function getNavigationDashbarMenubar(){
+    return menubar.navigation.dashboard;
+}
+export function getNavigationAdminMenubar(){
+    return menubar.navigation.admin;
+}
+
+export function getNavigationMyinfoMenubar(){
+    return menubar.navigation.myinfo;
+}
+
+export function getSuccessNotificationObject(){
+    return notification.notifi_success;
+}
+
+
 export function getMyInforfullnameObject(){
 return myinfo.full_name;
 }

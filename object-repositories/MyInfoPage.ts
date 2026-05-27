@@ -29,8 +29,8 @@ export const myinfo = {
         select_maritalstatus_selected:'//label[contains(text(),"Marital Status")]/parent::div/following-sibling::div//div[contains(@class,"oxd-select-text-input")]',
         select_maritalstatus:'//label[contains(text(),"Marital Status")]/parent::div/following-sibling::div//div[contains(@class,"oxd-select-text--active")]',
         input_dateofbirth:'//label[contains(text(),"Date of Birth")]/parent::div/following-sibling::div//input',
-        radio_gender_male:'//label[text()="Gender"]/parent::div/following-sibling::div//input[@value="1"]',
-        radio_gender_female:'//label[text()="Gender"]/parent::div/following-sibling::div//input[@value="2"]',
+        radio_gender_male:'//label[text()="Gender"]/parent::div/following-sibling::div',
+        radio_gender_female:'//label[text()="Gender"]/parent::div/following-sibling::div',
         button_save1:'//div[@class="orangehrm-horizontal-padding orangehrm-vertical-padding"]//button[@type="submit"][normalize-space()="Save"]'
 
 

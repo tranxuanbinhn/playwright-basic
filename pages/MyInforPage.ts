@@ -24,7 +24,7 @@ export class MyInfoPage {
         this.id = page.locator(repo.getPersionalDetailInputEmployeeidObject())
         this.otherid = page.locator(repo.getPersionalDetailInputOtherIdObject())
         this.driverlicensenumber = page.locator(repo.getPersionalDetailDriverLicensedObject())
-        this.driverlicenseexpirydate = page.locator(repo.getPersionalDetailDriverLicensedExdateObject())\
+        this.driverlicenseexpirydate = page.locator(repo.getPersionalDetailDriverLicensedExdateObject())
         this.nationality = page.locator(repo.getPersionalDetailNationalyObject())
         this.maritalstatus = page.locator(repo.getPersionalDetaiMaritalstatusObject())
         this.dateofbirth = page.locator(repo.getPersionalDetaiDateOfBirthObject())
@@ -37,7 +37,7 @@ export class MyInfoPage {
         await this.firstname.fill(firstname)
     }
     async enterMiddleName(middlename:string){
-        await this.firstname.fill(middlename)
+        await this.middlename.fill(middlename)
     }
     async enterLastName(lastname:string){
         await this.lastname.fill(lastname)
@@ -57,6 +57,36 @@ export class MyInfoPage {
     async enterDateOfBirth(date: string) {
         await this.dateofbirth.fill(date);
     }
-    
-    
+    async selectnation(nation:string){
+        await this.nationality.click()
+        const list = this.page.locator('//label[contains(text(),"Nationality")]/parent::div/following-sibling::div//div[contains(@class,"oxd-select-dropdown")]')
+        await list.waitFor({state:'visible'})
+
+
+        await list.getByRole('option', {name:nation}).click()
+
+       
+    }
+    async selectMaritalStatus(Marital:string){
+        await this.maritalstatus.click()
+        const list = this.page.locator('//label[contains(text(),"Marital Status")]/parent::div/following-sibling::div//div[contains(@class,"oxd-select-dropdown")]')
+        await list.waitFor({state:'visible'})
+
+
+        await list.getByRole('option', {name:Marital}).click()
+        
+       
+    }
+    async chooseGener(gender:number){
+        if(gender===1){
+            await this.femalegender.click()
+        }
+        else if (gender===0)
+        {
+            await this.malegender.click()
+        }
+    }
+    async clickSave1Button(){
+        await this.buttonsave1.click()
+    }
 }
