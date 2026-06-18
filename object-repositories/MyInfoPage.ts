@@ -38,5 +38,23 @@ export const myinfo = {
 
         //page.locator('//label[text()="Other Id"]/parent::div/following-sibling::div/input')
         //page.locator('//div[contains(@class,"orangehrm-vertical-padding")]//input[contains(@class,"orangehrm-firstname")]')
+    },
+    emergency_contact_link:'a:has-text("Emergency Contacts")',
+    emergency_contact:{
+        button_add:'//h6[normalize-space()="Assigned Emergency Contacts"]/following-sibling::button[normalize-space()="Add"]',
+        add_page:{
+            main_title:'h6:has-text("Save Emergency Contact")',
+            input_name:'//label[normalize-space()="Name"]/parent::div/following-sibling::div/input',
+            relationship_input:'//label[normalize-space()="Relationship"]/parent::div/following-sibling::div/input',
+            hometelephone_input:'//label[normalize-space()="Home Telephone"]/parent::div/following-sibling::div/input',
+            mobile_input:'//label[normalize-space()="Mobile"]/parent::div/following-sibling::div/input',
+            worktelephone_input:'//label[normalize-space()="Work Telephone"]/parent::div/following-sibling::div/input',
+            save_button:'//button[normalize-space()="Save"]'
+        },
+        button_delete:'button:has-text("Delete Selected")',
+        button_delete_confirm:'button:has-text("Yes, Delete")',
+        edit_main_title:'h6:has-text("Edit Emergency Contact")',
+        load_spinner:'.oxd-loading-spinner'
+
     }
 }

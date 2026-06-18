@@ -1,5 +1,5 @@
 import * as dotenv from 'dotenv'
-import { MyInfoPage } from 'pages/MyInforPage'
+import { PersionalDetailPage } from 'pages/PersionalDetailPage'
 import {test, expect, Page} from '@playwright/test'
 
 import playwrightConfig from 'playwright.config'
@@ -10,7 +10,7 @@ import { runScriptTest } from 'types/IEditProfileData'
 dotenv.config()
 let page:Page
 let menubar:MenuBarPage;
-let myinfo:MyInfoPage;
+let myinfo:PersionalDetailPage;
 let notifi:Notification;
 let data : any;
 test.beforeAll(async ({browser})=>{
@@ -23,7 +23,7 @@ test('Edit Myinfor Page', async({page})=>{
     menubar = new MenuBarPage(page);
   
    await menubar.clickLinkMyinfo()
-    myinfo = new MyInfoPage(page)
+    myinfo = new PersionalDetailPage(page)
     await myinfo.enterFirstName(data.firstname);
     await myinfo.enterMiddleName(data.middlename)
     await myinfo.enterLastName(data.lastname)

@@ -1,6 +1,6 @@
 import {type Locator, type Page} from "@playwright/test";
 import * as repo from '../utils/object-repositories-handler'
-export class MyInfoPage {
+export class PersionalDetailPage {
     readonly page:Page;
     readonly firstname:Locator;
     readonly middlename:Locator;

@@ -9,6 +9,7 @@ export function getAuthFormUsernameObject(){
 export function getAuthFormPasswordObject(){
     return form.auth.login.password;
 }
+
 export function getAuthFormLoginBtnObject(){
     return form.auth.login.submitBtn;
 }
@@ -87,4 +88,43 @@ export function getPersionalDetaiGenderFemaleObject(){
 }
 export function getPersionalDetaiButtonSave1Object(){
     return myinfo.persional_detail.button_save1;
+}
+export function getEmergencyContactButtonAddObject(){
+    return myinfo.emergency_contact.button_add;
+}
+export function getEmergencyContactAddPageInputNameObject(){
+    return myinfo.emergency_contact.add_page.input_name;
+}
+export function getEmergencyContactAddPageRelationShipInputObject(){
+    return myinfo.emergency_contact.add_page.relationship_input;
+}
+export function getEmergencyContactAddPageHomeTelephoneInputObject(){
+    return myinfo.emergency_contact.add_page.hometelephone_input;
+}
+export function getEmergencyContactAddPageMobileInputObject(){
+    return myinfo.emergency_contact.add_page.mobile_input;
+}
+export function getEmergencyContactAddPageWorkTelephoneInputObject(){
+    return myinfo.emergency_contact.add_page.worktelephone_input;
+}
+export function getEmergencyContactAddPageWorkSaveButtonObject(){
+    return myinfo.emergency_contact.add_page.save_button;
+}
+export function getEmergencyContactMainTitleObject(){
+    return myinfo.emergency_contact.add_page.main_title;
+}
+export function getEmergencyContactLinkObject(){
+    return myinfo.emergency_contact_link;
+}
+export function getEmergencyContactButtonDeleteObject(){
+    return myinfo.emergency_contact.button_delete;
+}
+export function getEmergencyContactButtonDeleteConfirmObject(){
+    return myinfo.emergency_contact.button_delete_confirm;
+}
+export function getEmergencyContactEditMainTitleObject(){
+    return myinfo.emergency_contact.edit_main_title;
+}
+export function getEmergencyContactLoadSpinnerObject(){
+    return myinfo.emergency_contact.load_spinner;
 }
